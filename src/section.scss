@@ -1,0 +1,22 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1300px;
+  justify-content: space-around;
+  h2 {
+    width: 100%;
+  }
+  .project-container {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    img {
+      flex: 1 1 0;
+      width: auto;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+}
