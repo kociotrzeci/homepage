@@ -65,14 +65,7 @@ body {
 
 .box-shadow {
   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
-}
-
-.icon-container {
-  display: flex;
-  justify-content: end;
-  align-self: end;
-  margin-top: auto;
-}`, "",{"version":3,"sources":["webpack://./src/global.scss"],"names":[],"mappings":"AAAA;EACE,qBAAA;EACA,+DAAA;AACF;AACA;EACE,oBAAA;EACA,+DAAA;AACF;AACA;EACE,qBAAA;AACF;;AAEA;;;;;EAKE,oBAAA;AACF;;AACA;EACE,gBAAA;EACA,kBAAA;AAEF;;AAAA;EACE,YAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,kBAAA;AAGF;;AADA;EACE,+CAAA;AAIF;;AAFA;EACE,aAAA;EACA,oBAAA;EACA,eAAA;EACA,gBAAA;AAKF","sourcesContent":["@font-face {\r\n  font-family: \"roboto\";\r\n  src: url(\"./assets/font/Roboto-Regular.ttf\") format(\"truetype\");\r\n}\r\n@font-face {\r\n  font-family: \"fancy\";\r\n  src: url(\"./assets/font/PlayfairDisplay-Regular.ttf\") format(\"truetype\");\r\n}\r\n* {\r\n  font-family: \"roboto\";\r\n}\r\n\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5 {\r\n  font-family: \"fancy\";\r\n}\r\nhtml {\r\n  overflow: hidden;\r\n  overflow-y: scroll;\r\n}\r\nbody {\r\n  margin: 30px;\r\n  height: auto;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  background-color: white;\r\n  position: relative;\r\n}\r\n.box-shadow {\r\n  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);\r\n}\r\n.icon-container {\r\n  display: flex;\r\n  justify-content: end;\r\n  align-self: end;\r\n  margin-top: auto;\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/global.scss"],"names":[],"mappings":"AAAA;EACE,qBAAA;EACA,+DAAA;AACF;AACA;EACE,oBAAA;EACA,+DAAA;AACF;AACA;EACE,qBAAA;AACF;;AAEA;;;;;EAKE,oBAAA;AACF;;AACA;EACE,gBAAA;EACA,kBAAA;AAEF;;AAAA;EACE,YAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,kBAAA;AAGF;;AADA;EACE,+CAAA;AAIF","sourcesContent":["@font-face {\r\n  font-family: \"roboto\";\r\n  src: url(\"./assets/font/Roboto-Regular.ttf\") format(\"truetype\");\r\n}\r\n@font-face {\r\n  font-family: \"fancy\";\r\n  src: url(\"./assets/font/PlayfairDisplay-Regular.ttf\") format(\"truetype\");\r\n}\r\n* {\r\n  font-family: \"roboto\";\r\n}\r\n\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5 {\r\n  font-family: \"fancy\";\r\n}\r\nhtml {\r\n  overflow: hidden;\r\n  overflow-y: scroll;\r\n}\r\nbody {\r\n  margin: 30px;\r\n  height: auto;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  background-color: white;\r\n  position: relative;\r\n}\r\n.box-shadow {\r\n  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -110,7 +103,7 @@ header .photo {
   position: relative;
   display: flex;
   flex: 1 1 auto;
-  box-shadow: 8px 8px 38px -18px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);
   z-index: 5;
 }
 header .photo h1 {
@@ -130,7 +123,7 @@ header .side {
   width: 100%;
   flex: 1 1 auto;
   padding: 30px;
-  box-shadow: 8px 8px 38px -18px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);
   z-index: 5;
 }
 header .background {
@@ -143,8 +136,14 @@ header .background {
   rotate: -10deg;
   z-index: -1;
   background-color: rgb(50, 87, 159);
-  box-shadow: 8px 8px 38px -18px rgba(0, 0, 0, 0.5);
-}`, "",{"version":3,"sources":["webpack://./src/header.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,YAAA;EACA,iBAAA;EACA,iBAAA;AACF;AAAE;EACE,kBAAA;EACA,aAAA;EACA,cAAA;EACA,iDAAA;EACA,UAAA;AAEJ;AADI;EACE,eAAA;EACA,YAAA;EACA,WAAA;EACA,WAAA;EACA,kBAAA;EACA,kBAAA;EACA,WAAA;AAGN;AAAE;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,aAAA;EACA,WAAA;EACA,cAAA;EACA,aAAA;EACA,iDAAA;EACA,UAAA;AAEJ;AAAE;EACE,kBAAA;EACA,YAAA;EACA,WAAA;EACA,SAAA;EACA,UAAA;EACA,YAAA;EACA,cAAA;EACA,WAAA;EACA,kCAAA;EACA,iDAAA;AAEJ","sourcesContent":["header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  margin: 50px;\r\n  padding-top: 50px;\r\n  max-width: 1300px;\r\n  .photo {\r\n    position: relative;\r\n    display: flex;\r\n    flex: 1 1 auto;\r\n    box-shadow: 8px 8px 38px -18px rgba(0, 0, 0, 0.5);\r\n    z-index: 5;\r\n    h1 {\r\n      font-size: 3rem;\r\n      padding: 5px;\r\n      margin: 0px;\r\n      width: 100%;\r\n      text-align: center;\r\n      position: absolute;\r\n      bottom: 0px;\r\n    }\r\n  }\r\n  .side {\r\n    display: flex;\r\n    flex-direction: column;\r\n    background-color: white;\r\n    height: 300px;\r\n    width: 100%;\r\n    flex: 1 1 auto;\r\n    padding: 30px;\r\n    box-shadow: 8px 8px 38px -18px rgba(0, 0, 0, 0.5);\r\n    z-index: 5;\r\n  }\r\n  .background {\r\n    position: absolute;\r\n    width: 200vw;\r\n    height: 50%;\r\n    top: -20%;\r\n    left: -50%;\r\n    z-index: -10;\r\n    rotate: -10deg;\r\n    z-index: -1;\r\n    background-color: rgb(50, 87, 159);\r\n    box-shadow: 8px 8px 38px -18px rgba(0, 0, 0, 0.5);\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+  box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);
+}
+header .icon-container {
+  display: flex;
+  justify-content: end;
+  align-self: end;
+  margin-top: auto;
+}`, "",{"version":3,"sources":["webpack://./src/header.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,YAAA;EACA,iBAAA;EACA,iBAAA;AACF;AAAE;EACE,kBAAA;EACA,aAAA;EACA,cAAA;EACA,2CAAA;EACA,UAAA;AAEJ;AADI;EACE,eAAA;EACA,YAAA;EACA,WAAA;EACA,WAAA;EACA,kBAAA;EACA,kBAAA;EACA,WAAA;AAGN;AAAE;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,aAAA;EACA,WAAA;EACA,cAAA;EACA,aAAA;EACA,2CAAA;EACA,UAAA;AAEJ;AAAE;EACE,kBAAA;EACA,YAAA;EACA,WAAA;EACA,SAAA;EACA,UAAA;EACA,YAAA;EACA,cAAA;EACA,WAAA;EACA,kCAAA;EACA,2CAAA;AAEJ;AAAE;EACE,aAAA;EACA,oBAAA;EACA,eAAA;EACA,gBAAA;AAEJ","sourcesContent":["header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  margin: 50px;\r\n  padding-top: 50px;\r\n  max-width: 1300px;\r\n  .photo {\r\n    position: relative;\r\n    display: flex;\r\n    flex: 1 1 auto;\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n    z-index: 5;\r\n    h1 {\r\n      font-size: 3rem;\r\n      padding: 5px;\r\n      margin: 0px;\r\n      width: 100%;\r\n      text-align: center;\r\n      position: absolute;\r\n      bottom: 0px;\r\n    }\r\n  }\r\n  .side {\r\n    display: flex;\r\n    flex-direction: column;\r\n    background-color: white;\r\n    height: 300px;\r\n    width: 100%;\r\n    flex: 1 1 auto;\r\n    padding: 30px;\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n    z-index: 5;\r\n  }\r\n  .background {\r\n    position: absolute;\r\n    width: 200vw;\r\n    height: 50%;\r\n    top: -20%;\r\n    left: -50%;\r\n    z-index: -10;\r\n    rotate: -10deg;\r\n    z-index: -1;\r\n    background-color: rgb(50, 87, 159);\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n  }\r\n  .icon-container {\r\n    display: flex;\r\n    justify-content: end;\r\n    align-self: end;\r\n    margin-top: auto;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -171,27 +170,45 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 1300px;
-  justify-content: space-around;
-}
-section h2 {
   width: 100%;
-}
-section .project-container {
-  margin: 30px;
+  max-width: 1300px;
   display: flex;
   flex-direction: column;
-  align-self: stretch;
+  align-items: stretch;
 }
-section .project-container img {
-  flex: 1 1 0;
-  width: auto;
-  height: 200px;
-  object-fit: cover;
-}`, "",{"version":3,"sources":["webpack://./src/section.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,eAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;AACF;AAAE;EACE,WAAA;AAEJ;AAAE;EACE,YAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;AAEJ;AADI;EACE,WAAA;EACA,WAAA;EACA,aAAA;EACA,iBAAA;AAGN","sourcesContent":["section {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  max-width: 1300px;\r\n  justify-content: space-around;\r\n  h2 {\r\n    width: 100%;\r\n  }\r\n  .project-container {\r\n    margin: 30px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-self: stretch;\r\n    img {\r\n      flex: 1 1 0;\r\n      width: auto;\r\n      height: 200px;\r\n      object-fit: cover;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+section .grid {
+  max-width: 1300px;
+  flex: 1 1 auto;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+section .grid .project-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  overflow: hidden;
+}
+section .grid .project-container .project-image {
+  width: 100%;
+  height: auto;
+}
+section .grid .project-container .text-container {
+  padding: 16px;
+}
+section .grid .project-container .text-container .project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .grid .project-container .text-container .icon-container {
+  display: flex;
+  gap: 8px;
+}
+section .grid .project-container .text-container .icon {
+  width: 24px;
+  height: 24px;
+}`, "",{"version":3,"sources":["webpack://./src/section.scss"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,iBAAA;EACA,aAAA;EACA,sBAAA;EACA,oBAAA;AACF;AACE;EACE,iBAAA;EACA,cAAA;EACA,aAAA;EACA,SAAA;EACA,2DAAA;AACJ;AAAI;EACE,aAAA;EACA,sBAAA;EACA,gBAAA;EACA,gBAAA;AAEN;AADM;EACE,WAAA;EACA,YAAA;AAGR;AADM;EACE,aAAA;AAGR;AAFQ;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;AAIV;AAFQ;EACE,aAAA;EACA,QAAA;AAIV;AAFQ;EACE,WAAA;EACA,YAAA;AAIV","sourcesContent":["section {\r\n  width: 100%;\r\n  max-width: 1300px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: stretch;\r\n\r\n  .grid {\r\n    max-width: 1300px;\r\n    flex: 1 1 auto;\r\n    display: grid;\r\n    gap: 50px;\r\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\r\n    .project-container {\r\n      display: flex;\r\n      flex-direction: column;\r\n      max-width: 400px;\r\n      overflow: hidden;\r\n      .project-image {\r\n        width: 100%;\r\n        height: auto;\r\n      }\r\n      .text-container {\r\n        padding: 16px;\r\n        .project-header {\r\n          display: flex;\r\n          justify-content: space-between;\r\n          align-items: center;\r\n        }\r\n        .icon-container {\r\n          display: flex;\r\n          gap: 8px;\r\n        }\r\n        .icon {\r\n          width: 24px;\r\n          height: 24px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
