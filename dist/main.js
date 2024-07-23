@@ -38,6 +38,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@font-face {
 }
 * {
   font-family: "roboto";
+  font-size: 1.2rem;
 }
 
 h1,
@@ -65,7 +66,12 @@ body {
 
 .box-shadow {
   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
-}`, "",{"version":3,"sources":["webpack://./src/global.scss"],"names":[],"mappings":"AAAA;EACE,qBAAA;EACA,+DAAA;AACF;AACA;EACE,oBAAA;EACA,+DAAA;AACF;AACA;EACE,qBAAA;AACF;;AAEA;;;;;EAKE,oBAAA;AACF;;AACA;EACE,gBAAA;EACA,kBAAA;AAEF;;AAAA;EACE,YAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,kBAAA;AAGF;;AADA;EACE,+CAAA;AAIF","sourcesContent":["@font-face {\r\n  font-family: \"roboto\";\r\n  src: url(\"./assets/font/Roboto-Regular.ttf\") format(\"truetype\");\r\n}\r\n@font-face {\r\n  font-family: \"fancy\";\r\n  src: url(\"./assets/font/PlayfairDisplay-Regular.ttf\") format(\"truetype\");\r\n}\r\n* {\r\n  font-family: \"roboto\";\r\n}\r\n\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5 {\r\n  font-family: \"fancy\";\r\n}\r\nhtml {\r\n  overflow: hidden;\r\n  overflow-y: scroll;\r\n}\r\nbody {\r\n  margin: 30px;\r\n  height: auto;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  background-color: white;\r\n  position: relative;\r\n}\r\n.box-shadow {\r\n  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);\r\n}\r\n"],"sourceRoot":""}]);
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}`, "",{"version":3,"sources":["webpack://./src/global.scss"],"names":[],"mappings":"AAAA;EACE,qBAAA;EACA,+DAAA;AACF;AACA;EACE,oBAAA;EACA,+DAAA;AACF;AACA;EACE,qBAAA;EACA,iBAAA;AACF;;AAEA;;;;;EAKE,oBAAA;AACF;;AACA;EACE,gBAAA;EACA,kBAAA;AAEF;;AAAA;EACE,YAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,kBAAA;AAGF;;AADA;EACE,+CAAA;AAIF;;AADA;EACE,cAAA;EACA,aAAA;AAIF","sourcesContent":["@font-face {\r\n  font-family: \"roboto\";\r\n  src: url(\"./assets/font/Roboto-Regular.ttf\") format(\"truetype\");\r\n}\r\n@font-face {\r\n  font-family: \"fancy\";\r\n  src: url(\"./assets/font/PlayfairDisplay-Regular.ttf\") format(\"truetype\");\r\n}\r\n* {\r\n  font-family: \"roboto\";\r\n  font-size: 1.2rem;\r\n}\r\n\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5 {\r\n  font-family: \"fancy\";\r\n}\r\nhtml {\r\n  overflow: hidden;\r\n  overflow-y: scroll;\r\n}\r\nbody {\r\n  margin: 30px;\r\n  height: auto;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  background-color: white;\r\n  position: relative;\r\n}\r\n.box-shadow {\r\n  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);\r\n}\r\n\r\n.icon {\r\n  height: 1.5rem;\r\n  width: 1.5rem;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -143,7 +149,8 @@ header .icon-container {
   justify-content: end;
   align-self: end;
   margin-top: auto;
-}`, "",{"version":3,"sources":["webpack://./src/header.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,YAAA;EACA,iBAAA;EACA,iBAAA;AACF;AAAE;EACE,kBAAA;EACA,aAAA;EACA,cAAA;EACA,2CAAA;EACA,UAAA;AAEJ;AADI;EACE,eAAA;EACA,YAAA;EACA,WAAA;EACA,WAAA;EACA,kBAAA;EACA,kBAAA;EACA,WAAA;AAGN;AAAE;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,aAAA;EACA,WAAA;EACA,cAAA;EACA,aAAA;EACA,2CAAA;EACA,UAAA;AAEJ;AAAE;EACE,kBAAA;EACA,YAAA;EACA,WAAA;EACA,SAAA;EACA,UAAA;EACA,YAAA;EACA,cAAA;EACA,WAAA;EACA,kCAAA;EACA,2CAAA;AAEJ;AAAE;EACE,aAAA;EACA,oBAAA;EACA,eAAA;EACA,gBAAA;AAEJ","sourcesContent":["header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  margin: 50px;\r\n  padding-top: 50px;\r\n  max-width: 1300px;\r\n  .photo {\r\n    position: relative;\r\n    display: flex;\r\n    flex: 1 1 auto;\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n    z-index: 5;\r\n    h1 {\r\n      font-size: 3rem;\r\n      padding: 5px;\r\n      margin: 0px;\r\n      width: 100%;\r\n      text-align: center;\r\n      position: absolute;\r\n      bottom: 0px;\r\n    }\r\n  }\r\n  .side {\r\n    display: flex;\r\n    flex-direction: column;\r\n    background-color: white;\r\n    height: 300px;\r\n    width: 100%;\r\n    flex: 1 1 auto;\r\n    padding: 30px;\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n    z-index: 5;\r\n  }\r\n  .background {\r\n    position: absolute;\r\n    width: 200vw;\r\n    height: 50%;\r\n    top: -20%;\r\n    left: -50%;\r\n    z-index: -10;\r\n    rotate: -10deg;\r\n    z-index: -1;\r\n    background-color: rgb(50, 87, 159);\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n  }\r\n  .icon-container {\r\n    display: flex;\r\n    justify-content: end;\r\n    align-self: end;\r\n    margin-top: auto;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+  gap: 0.5rem;
+}`, "",{"version":3,"sources":["webpack://./src/header.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,YAAA;EACA,iBAAA;EACA,iBAAA;AACF;AAAE;EACE,kBAAA;EACA,aAAA;EACA,cAAA;EACA,2CAAA;EACA,UAAA;AAEJ;AADI;EACE,eAAA;EACA,YAAA;EACA,WAAA;EACA,WAAA;EACA,kBAAA;EACA,kBAAA;EACA,WAAA;AAGN;AAAE;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,aAAA;EACA,WAAA;EACA,cAAA;EACA,aAAA;EACA,2CAAA;EACA,UAAA;AAEJ;AAAE;EACE,kBAAA;EACA,YAAA;EACA,WAAA;EACA,SAAA;EACA,UAAA;EACA,YAAA;EACA,cAAA;EACA,WAAA;EACA,kCAAA;EACA,2CAAA;AAEJ;AAAE;EACE,aAAA;EACA,oBAAA;EACA,eAAA;EACA,gBAAA;EACA,WAAA;AAEJ","sourcesContent":["header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  margin: 50px;\r\n  padding-top: 50px;\r\n  max-width: 1300px;\r\n  .photo {\r\n    position: relative;\r\n    display: flex;\r\n    flex: 1 1 auto;\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n    z-index: 5;\r\n    h1 {\r\n      font-size: 3rem;\r\n      padding: 5px;\r\n      margin: 0px;\r\n      width: 100%;\r\n      text-align: center;\r\n      position: absolute;\r\n      bottom: 0px;\r\n    }\r\n  }\r\n  .side {\r\n    display: flex;\r\n    flex-direction: column;\r\n    background-color: white;\r\n    height: 300px;\r\n    width: 100%;\r\n    flex: 1 1 auto;\r\n    padding: 30px;\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n    z-index: 5;\r\n  }\r\n  .background {\r\n    position: absolute;\r\n    width: 200vw;\r\n    height: 50%;\r\n    top: -20%;\r\n    left: -50%;\r\n    z-index: -10;\r\n    rotate: -10deg;\r\n    z-index: -1;\r\n    background-color: rgb(50, 87, 159);\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n  }\r\n  .icon-container {\r\n    display: flex;\r\n    justify-content: end;\r\n    align-self: end;\r\n    margin-top: auto;\r\n    gap: 0.5rem;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -191,7 +198,8 @@ section .grid .project-container {
 }
 section .grid .project-container .project-image {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 section .grid .project-container .text-container {
   padding: 16px;
@@ -201,14 +209,10 @@ section .grid .project-container .text-container .project-header {
   justify-content: space-between;
   align-items: center;
 }
-section .grid .project-container .text-container .icon-container {
-  display: flex;
-  gap: 8px;
-}
-section .grid .project-container .text-container .icon {
-  width: 24px;
-  height: 24px;
-}`, "",{"version":3,"sources":["webpack://./src/section.scss"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,iBAAA;EACA,aAAA;EACA,sBAAA;EACA,oBAAA;AACF;AACE;EACE,iBAAA;EACA,cAAA;EACA,aAAA;EACA,SAAA;EACA,2DAAA;AACJ;AAAI;EACE,aAAA;EACA,sBAAA;EACA,gBAAA;EACA,gBAAA;AAEN;AADM;EACE,WAAA;EACA,YAAA;AAGR;AADM;EAME,aAAA;AAFR;AAHQ;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;AAKV;AADQ;EACE,aAAA;EACA,QAAA;AAGV;AADQ;EACE,WAAA;EACA,YAAA;AAGV","sourcesContent":["section {\r\n  width: 100%;\r\n  max-width: 1300px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: stretch;\r\n\r\n  .grid {\r\n    max-width: 1300px;\r\n    flex: 1 1 auto;\r\n    display: grid;\r\n    gap: 50px;\r\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\r\n    .project-container {\r\n      display: flex;\r\n      flex-direction: column;\r\n      max-width: 400px;\r\n      overflow: hidden;\r\n      .project-image {\r\n        width: 100%;\r\n        height: auto;\r\n      }\r\n      .text-container {\r\n        .project-header {\r\n          display: flex;\r\n          justify-content: space-between;\r\n          align-items: center;\r\n        }\r\n        padding: 16px;\r\n\r\n        .icon-container {\r\n          display: flex;\r\n          gap: 8px;\r\n        }\r\n        .icon {\r\n          width: 24px;\r\n          height: 24px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+section .grid .project-container .text-container .icon.external-link {
+  height: 1.55rem;
+  width: 1.55rem;
+}`, "",{"version":3,"sources":["webpack://./src/section.scss"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,iBAAA;EACA,aAAA;EACA,sBAAA;EACA,oBAAA;AACF;AACE;EACE,iBAAA;EACA,cAAA;EACA,aAAA;EACA,SAAA;EACA,2DAAA;AACJ;AAAI;EACE,aAAA;EACA,sBAAA;EACA,gBAAA;EACA,gBAAA;AAEN;AADM;EACE,WAAA;EACA,iBAAA;EACA,iBAAA;AAGR;AADM;EAME,aAAA;AAFR;AAHQ;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;AAKV;AADQ;EACE,eAAA;EACA,cAAA;AAGV","sourcesContent":["section {\r\n  width: 100%;\r\n  max-width: 1300px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: stretch;\r\n\r\n  .grid {\r\n    max-width: 1300px;\r\n    flex: 1 1 auto;\r\n    display: grid;\r\n    gap: 50px;\r\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\r\n    .project-container {\r\n      display: flex;\r\n      flex-direction: column;\r\n      max-width: 400px;\r\n      overflow: hidden;\r\n      .project-image {\r\n        width: 100%;\r\n        aspect-ratio: 1/1;\r\n        object-fit: cover;\r\n      }\r\n      .text-container {\r\n        .project-header {\r\n          display: flex;\r\n          justify-content: space-between;\r\n          align-items: center;\r\n        }\r\n        padding: 16px;\r\n\r\n        .icon.external-link {\r\n          height: 1.55rem;\r\n          width: 1.55rem;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
