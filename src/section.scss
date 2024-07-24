@@ -4,9 +4,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-
+  margin: 50px;
   .grid {
-    max-width: 1300px;
     flex: 1 1 auto;
     display: grid;
     gap: 50px;

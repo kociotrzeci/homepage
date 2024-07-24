@@ -6,6 +6,8 @@
   font-family: "fancy";
   src: url("./assets/font/PlayfairDisplay-Regular.ttf") format("truetype");
 }
+
+$color: rgb(50, 87, 159);
 * {
   font-family: "roboto";
   font-size: 1.2rem;
@@ -23,7 +25,8 @@ html {
   overflow-y: scroll;
 }
 body {
-  margin: 30px;
+  margin: 0;
+  padding: 0;
   height: auto;
   display: flex;
   flex-direction: column;

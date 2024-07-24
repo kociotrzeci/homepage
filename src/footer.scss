@@ -1,0 +1,33 @@
+@use "global" as global;
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+  padding: 0;
+  width: 100%;
+  background-color: global.$color;
+  color: white;
+  .content {
+    max-width: 1300px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    h2 {
+      font-size: 2rem;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+    }
+    .icon {
+      margin-right: 1rem;
+      height: 3rem;
+      width: 3rem;
+    }
+    .right {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
