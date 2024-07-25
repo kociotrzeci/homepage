@@ -20,6 +20,9 @@ h4,
 h5 {
   font-family: "fancy";
 }
+h2 {
+  font-size: 1.7rem;
+}
 html {
   overflow: hidden;
   overflow-y: scroll;
@@ -41,4 +44,8 @@ body {
 .icon {
   height: 1.5rem;
   width: 1.5rem;
+  transition: all 0.1s ease-in-out;
+}
+.icon:hover {
+  transform: scale(1.2);
 }
