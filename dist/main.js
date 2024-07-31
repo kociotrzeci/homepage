@@ -253,7 +253,6 @@ header .photo h1 {
   bottom: 0px;
 }
 header .photo img {
-  float: left;
   width: 512px;
   height: 512px;
 }
@@ -281,10 +280,25 @@ header .background {
 }
 
 @media (max-width: 1000px) {
-  header .background {
+  header {
+    display: block;
+  }
+  .photo {
+    float: left;
+    margin-right: 20px;
+  }
+  .photo img {
+    width: 300px;
+    height: 300px;
+  }
+  .side {
+    overflow: hidden;
+    padding-top: 0;
+  }
+  .background {
     height: 1400px;
   }
-}`, "",{"version":3,"sources":["webpack://./src/header.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,YAAA;EACA,iBAAA;EACA,iBAAA;EACA,kBAAA;AACF;AAAE;EACE,kBAAA;EACA,aAAA;EACA,cAAA;EACA,2CAAA;EACA,UAAA;AAEJ;AADI;EACE,eAAA;EACA,YAAA;EACA,WAAA;EACA,WAAA;EACA,kBAAA;EACA,kBAAA;EACA,WAAA;AAGN;AADI;EACE,WAAA;EACA,YAAA;EACA,aAAA;AAGN;AAAE;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,WAAA;EACA,cAAA;EACA,aAAA;EACA,2CAAA;EACA,UAAA;AAEJ;AAAE;EACE,kBAAA;EACA,WAAA;EACA,cAAA;EACA,WAAA;EACA,UAAA;EACA,YAAA;EACA,cAAA;EACA,WAAA;EACA,kCAAA;EACA,2CAAA;AAEJ;;AAEA;EAUI;IACE,cAAA;EARJ;AACF","sourcesContent":["header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  margin: 50px;\r\n  padding-top: 50px;\r\n  max-width: 1700px;\r\n  overflow-x: hidden;\r\n  .photo {\r\n    position: relative;\r\n    display: flex;\r\n    flex: 1 1 auto;\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n    z-index: 5;\r\n    h1 {\r\n      font-size: 3rem;\r\n      padding: 5px;\r\n      margin: 0px;\r\n      width: 100%;\r\n      text-align: center;\r\n      position: absolute;\r\n      bottom: 0px;\r\n    }\r\n    img {\r\n      float: left;\r\n      width: 512px;\r\n      height: 512px;\r\n    }\r\n  }\r\n  .side {\r\n    display: flex;\r\n    flex-direction: column;\r\n    background-color: white;\r\n    width: 100%;\r\n    flex: 1 1 auto;\r\n    padding: 30px;\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n    z-index: 5;\r\n  }\r\n  .background {\r\n    position: absolute;\r\n    width: 200%;\r\n    height: 1000px;\r\n    top: -500px;\r\n    left: -50%;\r\n    z-index: -10;\r\n    rotate: -10deg;\r\n    z-index: -1;\r\n    background-color: rgb(50, 87, 159);\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n  }\r\n}\r\n\r\n@media (max-width: 1000px) {\r\n  header {\r\n    .photo {\r\n      h1 {\r\n      }\r\n      img {\r\n      }\r\n    }\r\n    .side {\r\n    }\r\n    .background {\r\n      height: 1400px;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/header.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,YAAA;EACA,iBAAA;EACA,iBAAA;EACA,kBAAA;AACF;AAAE;EACE,kBAAA;EACA,aAAA;EACA,cAAA;EACA,2CAAA;EACA,UAAA;AAEJ;AADI;EACE,eAAA;EACA,YAAA;EACA,WAAA;EACA,WAAA;EACA,kBAAA;EACA,kBAAA;EACA,WAAA;AAGN;AADI;EACE,YAAA;EACA,aAAA;AAGN;AAAE;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,WAAA;EACA,cAAA;EACA,aAAA;EACA,2CAAA;EACA,UAAA;AAEJ;AAAE;EACE,kBAAA;EACA,WAAA;EACA,cAAA;EACA,WAAA;EACA,UAAA;EACA,YAAA;EACA,cAAA;EACA,WAAA;EACA,kCAAA;EACA,2CAAA;AAEJ;;AAEA;EACE;IACE,cAAA;EACF;EAEA;IACE,WAAA;IACA,kBAAA;EAAF;EAGA;IACE,YAAA;IACA,aAAA;EADF;EAIA;IACE,gBAAA;IACA,cAAA;EAFF;EAKA;IACE,cAAA;EAHF;AACF","sourcesContent":["header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  margin: 50px;\r\n  padding-top: 50px;\r\n  max-width: 1700px;\r\n  overflow-x: hidden;\r\n  .photo {\r\n    position: relative;\r\n    display: flex;\r\n    flex: 1 1 auto;\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n    z-index: 5;\r\n    h1 {\r\n      font-size: 3rem;\r\n      padding: 5px;\r\n      margin: 0px;\r\n      width: 100%;\r\n      text-align: center;\r\n      position: absolute;\r\n      bottom: 0px;\r\n    }\r\n    img {\r\n      width: 512px;\r\n      height: 512px;\r\n    }\r\n  }\r\n  .side {\r\n    display: flex;\r\n    flex-direction: column;\r\n    background-color: white;\r\n    width: 100%;\r\n    flex: 1 1 auto;\r\n    padding: 30px;\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n    z-index: 5;\r\n  }\r\n  .background {\r\n    position: absolute;\r\n    width: 200%;\r\n    height: 1000px;\r\n    top: -500px;\r\n    left: -50%;\r\n    z-index: -10;\r\n    rotate: -10deg;\r\n    z-index: -1;\r\n    background-color: rgb(50, 87, 159);\r\n    box-shadow: 8px 8px 38px -18px rgb(0, 0, 0);\r\n  }\r\n}\r\n\r\n@media (max-width: 1000px) {\r\n  header {\r\n    display: block;\r\n  }\r\n\r\n  .photo {\r\n    float: left;\r\n    margin-right: 20px;\r\n  }\r\n\r\n  .photo img {\r\n    width: 300px;\r\n    height: 300px;\r\n  }\r\n\r\n  .side {\r\n    overflow: hidden;\r\n    padding-top: 0;\r\n  }\r\n\r\n  .background {\r\n    height: 1400px;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
