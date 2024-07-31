@@ -6,21 +6,25 @@ section {
   align-items: stretch;
   padding: 50px;
   box-sizing: border-box;
+
   .grid {
     flex: 1 1 auto;
     display: grid;
     gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
     .project-container {
       display: flex;
       flex-direction: column;
-      max-width: 450px;
+      max-width: 700px;
       overflow: hidden;
+
       .project-image {
         width: 100%;
-        aspect-ratio: 1/1;
+        aspect-ratio: 4/3;
         object-fit: cover;
       }
+
       .text-container {
         .project-header {
           display: flex;
@@ -37,9 +41,25 @@ section {
     }
   }
 }
+
 .project-container {
   transition: all 0.1s ease-in-out;
 }
+
 .project-container:hover {
   transform: scale(1.02);
+}
+
+@media (max-width: 1000px) {
+  section {
+    padding: 30px;
+    .grid {
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+      .project-container {
+        max-width: 500px;
+      }
+    }
+  }
 }
